@@ -1,0 +1,73 @@
+let elements = document.querySelectorAll('.prodyktConteiner');
+var catalog=[
+    {
+       available:true,
+       special:true
+    },
+    {
+        available:false,
+        special:false
+    },
+    {
+        available:true,
+        special:false
+    },
+    {
+        available:true,
+        special:false
+    },
+    {
+        available:true,
+        special:true
+    },
+    {
+        available:true,
+        special:true
+    },
+    {
+        available:true,
+        special:false
+    },
+    {
+        available:true,
+        special:true
+    },
+    {
+        available:false,
+        special:false
+    },
+    {
+        available:true,
+        special:false
+    },
+    {
+        available:true,
+        special:false
+    },
+    {
+        available:false,
+        special:false
+    },
+    {
+        available:false,
+        special:false
+    },
+    {
+        available:true,
+        special:false
+    },
+    {
+        available:true,
+        special:true
+    }];
+
+for (let i=0; i<elements.length;i++){
+    let element =elements[i];
+    let prodykt =catalog[i];
+    if(!prodykt.available){
+    element.classList.add('unavailable')
+    }
+    if(prodykt.special){
+    element.classList.add('special')
+    }
+}

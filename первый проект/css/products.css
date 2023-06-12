@@ -1,0 +1,81 @@
+.prodyktConteiner {
+    width: 1024px;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: white;
+    display: flex;
+    border-radius: 5px;
+}
+
+.prodyktConteiner img {
+    width: 250px;
+    height: 250px;
+}
+
+.prodyktContent {
+    flex: 1;
+    height: 250px;
+    padding: 0px 15px;
+    overflow-y: auto;
+}
+
+.prodyctsCost {
+    width: 160px;
+    height: 250px;
+    text-align: center;
+}
+
+body {
+    
+    background-image: linear-gradient(to right top,aqua ,orange 50%,red 75%,green 100%);
+    
+    
+    
+}
+
+@media(max-width:757px) {
+    header ul {
+        margin: 0;
+        padding: 0;
+        font-size: small;
+    }
+
+    .prodyktConteiner {
+        height: auto;
+        max-width: none;
+        width: 100%;
+        display: block;
+        border-radius: 0;
+    }
+
+    .prodyktConteiner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .prodyctsCost {
+        width: auto;
+        height: auto;
+    }
+}
+.unavailable{
+    filter: grayscale(10) opacity(0.7);
+}
+.unavailable::before{
+    content: "нет в наличии";
+    position: absolute;
+    top: 10%;
+    left: 50%;
+}
+.special{
+    filter: saturate(1.5) opacity(0.7);
+}
+.special::before{
+    content: "товар со скидкой 0%";
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    background-color: rgba(228, 114, 137, 0.689);
+}
+

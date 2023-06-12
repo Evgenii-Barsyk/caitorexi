@@ -1,0 +1,34 @@
+.galery{
+    margin-top: 5%;
+    margin-left: 5%;
+   
+}
+.galery-small{
+    display: flex;
+    flex-wrap: wrap;
+}
+.galery-small img{
+    height: 92px;
+    margin: 10px 10px;
+    cursor: pointer;
+    display: block;
+    opacity: 2;
+}
+.galery-small img:hover{
+    opacity: 1;
+    transform: scale(30) rotateZ(36990deg);
+    transition-duration: 50000ms;
+}
+.imagecoints img{
+    width: 100%;
+    transition: transform 5s;
+}
+.imagecoints img:hover{
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+.imagecoints{
+    width: 33%;
+    padding: 10px;
+    margin-left: 33%;
+}
